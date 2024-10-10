@@ -20,7 +20,7 @@ stages:
       - deployment: Deploy
         displayName: ${{ parameters.jobName }}
         pool:
-          vmImage: 'windows-latest'
+          name: 'TangFamilySelfHosted'
         variables:
         - group: ${{ parameters.variableGroup }}
         environment: ${{ parameters.environment }}       
