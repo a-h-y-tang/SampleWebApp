@@ -5,9 +5,10 @@
 
 trigger:
 - main
+- azure-pipeline-selfhosted
 
 pool:
-  vmImage: 'ubuntu-latest'
+  name: 'TangFamilySelfHosted'
 
 variables:
   solution: '**/*.sln'
