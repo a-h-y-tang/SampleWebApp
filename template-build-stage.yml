@@ -4,6 +4,6 @@ stages:
     jobs:
     - job: Build
       pool:
-        name: SelfHostedAgents        
+        name: TangFamilySelfHosted        
       steps:           
       - template: templates-steps.yml
