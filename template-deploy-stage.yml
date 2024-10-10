@@ -32,7 +32,7 @@ stages:
                  artifact: webapp_build
                - task: AzureWebApp@1
                  inputs:
-                  azureSubscription: 'AzureServiceConnection'
+                  azureSubscription: 'AzureDevOpsToAzure'
                   appType: 'webApp'
                   appName: ${{ parameters.appName }}       
                   package: '$(Pipeline.Workspace)/**/*.zip'
