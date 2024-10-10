@@ -5,6 +5,7 @@
 
 trigger:
 - main
+- azure-pipeline-self-hosted
 
 variables:
   solution: '**/*.sln'
